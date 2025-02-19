@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: "srinivas0001/my-nodejs-app"  # Your Docker image
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+appName: "my-nodejs-app"
+testMe: "Hello, world!"
+
+service:
+  type: LoadBalancer
+  port: 4444
